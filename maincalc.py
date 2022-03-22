@@ -20,7 +20,7 @@ def clear():
         os.system("clear")
 
 #lev calc
-def short(entry,leverage,rr,label):
+def long(entry,leverage,rr,label):
     pop  = round(float("{:.2f}".format(rr/leverage)), 2)
     if label == 'TP':
         out = entry + ((entry*float(pop))/100)
@@ -53,19 +53,19 @@ def process():
         LEVERAGE - {leverage}
         Direction - LONG
         
-        TP - {short(entry,leverage,tp,'TP')}
-        SL - {short(entry,leverage,sl,'SL')}
+        TP - {long(entry,leverage,tp,'TP')}
+        SL - {long(entry,leverage,sl,'SL')}
 
         """)
 
         print("Press anything to copy tp.",end='')
         input()
-        pyperclip.copy(short(entry,leverage,tp,'TP'))
+        pyperclip.copy(long(entry,leverage,tp,'TP'))
         print("Copied !")
         input()
         print("Press anything to copy sl.",end='')
         input()
-        pyperclip.copy(short(entry,leverage,tp,'SL'))
+        pyperclip.copy(long(entry,leverage,tp,'SL'))
         print("Copied !")
         input()
 
