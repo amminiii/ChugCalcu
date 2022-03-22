@@ -1,0 +1,6 @@
+RISK = 1.5
+REWARD = 2
+DEF_LEV = 7
+
+API_KEY = ''
+SECRET_KEY = ''
