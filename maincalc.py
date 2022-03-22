@@ -45,10 +45,14 @@ def process():
     """)
 
     print("Press anything to copy tp.",end='')
-    pyperclip.copy(str(price_point(entry,leverage,tp,'TP')))
+    input()
+    pyperclip.copy(price_point(entry,leverage,tp,'TP'))
+    print("Copied !")
     input()
     print("Press anything to copy sl.",end='')
-    pyperclip.copy(str(price_point(entry,leverage,sl,'SL')))
+    input()
+    pyperclip.copy(price_point(entry,leverage,tp,'SL'))
+    print("Copied !")
     input()
 
 while True:
