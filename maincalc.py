@@ -65,7 +65,7 @@ def process():
         input()
         print("Press anything to copy sl.",end='')
         input()
-        pyperclip.copy(long(entry,leverage,tp,'SL'))
+        pyperclip.copy(long(entry,leverage,sl,'SL'))
         print("Copied !")
         input()
 
@@ -86,7 +86,7 @@ def process():
         input()
         print("Press anything to copy sl.",end='')
         input()
-        pyperclip.copy(short(entry,leverage,tp,'SL'))
+        pyperclip.copy(short(entry,leverage,sl,'SL'))
         print("Copied !")
         input()
 
